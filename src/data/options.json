@@ -1,0 +1,40 @@
+{
+  "rang": [
+    {"label": "Kalo ⚫", "value": "kalo"},
+    {"label": "Seto ⚪", "value": "seto"},
+    {"label": "Dhusi 🌫️", "value": "dhusi"},
+    {"label": "Gulabi 🌸", "value": "gulabi"},
+    {"label": "Mocha ☕", "value": "mocha"},
+    {"label": "Roast Beef 🥩", "value": "roast beef"},
+    {"label": "Kalo Chocolate 🍫", "value": "kalo chocolate"},
+    {"label": "Rato Risa 🔥", "value": "rato risa"},
+    {"label": "Feko Ghost 👻", "value": "pheko ghost"},
+    {"label": "Karkale Mushroom 🍄", "value": "karkale mushroom"}
+  ],
+  "size": [
+    {"label": "Sano 🐜", "value": "sano"},
+    {"label": "Micro 📏", "value": "micro"},
+    {"label": "3 inch ✂️", "value": "3 inch"},
+    {"label": "Normal 😐", "value": "normal"},
+    {"label": "Mota / Girthy 🍆", "value": "mota"},
+    {"label": "Thulo / Huge 🚀", "value": "thulo"},
+    {"label": "Dhilo / Wide 🕳️", "value": "dhilo"},
+    {"label": "Kasauko / Tight 🔥", "value": "kasauko"}
+  ],
+  "akarMale": [
+    {"label": "Sidha 📏", "value": "sidha"},
+    {"label": "Banko 🍌", "value": "banko"},
+    {"label": "Kera 🍌", "value": "kera"},
+    {"label": "Chyau 🍄", "value": "chyau"},
+    {"label": "Pencil ✏️", "value": "pencil"},
+    {"label": "Prashna Chinha ❓", "value": "prashna chinha"}
+  ],
+  "gahiroFemale": [
+    {"label": "Ulo 🟦", "value": "ulo"},
+    {"label": "Thulo Gufa 🕳️", "value": "thulo gufa"},
+    {"label": "4 cm 📏", "value": "4 cm"},
+    {"label": "10 cm 🕳️", "value": "10 cm"},
+    {"label": "Antim Andhera 🌌", "value": "antim andhera"},
+    {"label": "Kalo Bibar ⚫", "value": "kalo bibar"}
+  ]
+}
