@@ -26,8 +26,8 @@ export default function Home() {
           content="The future of private body analysis is arriving. AI-powered color, size, shape & vibe detection — 100% private & encrypted. Be the first to know."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/" />
-        <meta property="og:image" content="https://yourdomain.com/og-image.jpg" /> {/* add a real 1200×630 teaser image later */}
+        <meta property="og:url" content="https://puttiprismai.vercel.app/" />
+        <meta property="og:image" content="https://puttiprismai.vercel.app/og-image.jpg" /> {/* add a real 1200×630 teaser image later */}
         <meta property="og:site_name" content="PuttiPrism AI" />
 
         {/* Twitter / X Cards */}
@@ -37,7 +37,7 @@ export default function Home() {
           name="twitter:description"
           content="Coming soon: judgment-free AI analysis of intimate colors, sizes, shapes & more. Privacy first. Notify me when it launches!"
         />
-        <meta name="twitter:image" content="https://yourdomain.com/twitter-image.jpg" />
+        <meta name="twitter:image" content="https://puttiprismai.vercel.app/twitter-image.jpg" />
 
         {/* Basic viewport & charset (good practice) */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
