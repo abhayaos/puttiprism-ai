@@ -38,18 +38,27 @@ export default function Roast() {
 
       setRoastMsg(msg);
       setLoading(false);
-    }, 3000);
+    }, 2000);
   };
 
   const akarOptions =
     gender === "male" ? akarMale : gahiroFemale;
 
+  const baseBtn =
+    "p-4 rounded-xl border transition-all duration-200 font-medium";
+
+  const selectedStyle =
+    "bg-red-600 text-white border-red-600 shadow-lg scale-105";
+
+  const normalStyle =
+    "bg-white text-black border-gray-300 hover:border-red-500 hover:bg-red-50";
+
   return (
-    <div className="min-h-screen bg-black text-white px-6 py-16">
+    <div className="min-h-screen bg-white text-black px-6 py-16">
 
       <button
         onClick={() => navigate("/")}
-        className="text-gray-400 hover:text-white underline mb-10"
+        className="text-gray-500 hover:text-black underline mb-10"
       >
         ← Back
       </button>
@@ -62,14 +71,17 @@ export default function Roast() {
 
         <div className="space-y-12">
 
+          {/* Rang */}
           <div>
-            <h2 className="text-2xl font-bold text-red-500 mb-4">Rang</h2>
+            <h2 className="text-2xl font-bold text-red-600 mb-4">Rang</h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {rangOptions.map((opt) => (
                 <button
                   key={opt.value}
                   onClick={() => setRang(opt.value)}
-                  className="p-4 border border-neutral-700 rounded-xl hover:border-red-500"
+                  className={`${baseBtn} ${
+                    rang === opt.value ? selectedStyle : normalStyle
+                  }`}
                 >
                   {opt.label}
                 </button>
@@ -77,14 +89,17 @@ export default function Roast() {
             </div>
           </div>
 
+          {/* Size */}
           <div>
-            <h2 className="text-2xl font-bold text-red-500 mb-4">Size</h2>
+            <h2 className="text-2xl font-bold text-red-600 mb-4">Size</h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {sizeOptions.map((opt) => (
                 <button
                   key={opt.value}
                   onClick={() => setSize(opt.value)}
-                  className="p-4 border border-neutral-700 rounded-xl hover:border-red-500"
+                  className={`${baseBtn} ${
+                    size === opt.value ? selectedStyle : normalStyle
+                  }`}
                 >
                   {opt.label}
                 </button>
@@ -92,8 +107,9 @@ export default function Roast() {
             </div>
           </div>
 
+          {/* Akar / Gahiro */}
           <div>
-            <h2 className="text-2xl font-bold text-red-500 mb-4">
+            <h2 className="text-2xl font-bold text-red-600 mb-4">
               {gender === "male" ? "Akar" : "Gahiro"}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -101,7 +117,11 @@ export default function Roast() {
                 <button
                   key={opt.value}
                   onClick={() => setAkarYaGahiro(opt.value)}
-                  className="p-4 border border-neutral-700 rounded-xl hover:border-red-500"
+                  className={`${baseBtn} ${
+                    akarYaGahiro === opt.value
+                      ? selectedStyle
+                      : normalStyle
+                  }`}
                 >
                   {opt.label}
                 </button>
@@ -113,14 +133,14 @@ export default function Roast() {
         <button
           onClick={roastGar}
           disabled={loading}
-          className="mt-14 px-16 py-6 bg-red-600 hover:bg-red-500 text-2xl font-black rounded-full transition-all"
+          className="mt-14 px-16 py-6 bg-red-600 hover:bg-red-500 text-white text-2xl font-black rounded-full transition-all disabled:opacity-50"
         >
           {loading ? "Loading..." : "Roast Gar 💀"}
         </button>
 
         {roastMsg && (
-          <div className="mt-16 p-10 bg-neutral-900 border border-red-700 rounded-3xl">
-            <p className="text-xl">{roastMsg}</p>
+          <div className="mt-16 p-10 bg-gray-100 border border-red-400 rounded-3xl shadow-lg">
+            <p className="text-xl text-black">{roastMsg}</p>
           </div>
         )}
       </div>

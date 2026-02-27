@@ -6,11 +6,11 @@ export default function Gender() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center px-6">
+    <div className="min-h-screen bg-white text-black flex items-center justify-center px-6">
       <div className="w-full max-w-md text-center">
 
         {/* Logo / Title */}
-        <h1 className="text-5xl font-extrabold tracking-tight text-white mb-3">
+        <h1 className="text-5xl font-extrabold tracking-tight text-black mb-3">
           Putti<span className="text-red-600">Prism</span>
         </h1>
 
@@ -23,9 +23,9 @@ export default function Gender() {
 
           <button
             onClick={() => navigate("/roast/male")}
-            className="w-full flex items-center justify-between px-6 py-4 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-red-600 hover:bg-neutral-800 transition-all duration-200 group"
+            className="w-full flex items-center justify-between px-6 py-4 rounded-xl bg-gray-100 border border-gray-300 hover:border-red-600 hover:bg-gray-200 transition-all duration-200 group"
           >
-            <span className="text-lg font-medium">Male</span>
+            <span className="text-lg font-medium text-black">Male</span>
             <span className="text-2xl group-hover:scale-110 transition">
               ♂️
             </span>
@@ -33,9 +33,9 @@ export default function Gender() {
 
           <button
             onClick={() => navigate("/roast/female")}
-            className="w-full flex items-center justify-between px-6 py-4 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-red-600 hover:bg-neutral-800 transition-all duration-200 group"
+            className="w-full flex items-center justify-between px-6 py-4 rounded-xl bg-gray-100 border border-gray-300 hover:border-red-600 hover:bg-gray-200 transition-all duration-200 group"
           >
-            <span className="text-lg font-medium">Female</span>
+            <span className="text-lg font-medium text-black">Female</span>
             <span className="text-2xl group-hover:scale-110 transition">
               ♀️
             </span>
@@ -44,7 +44,7 @@ export default function Gender() {
         </div>
 
         {/* Footer */}
-        <p className="text-xs text-gray-600 mt-12">
+        <p className="text-xs text-gray-400 mt-12">
           Kathmandu, Nepal
         </p>
 
